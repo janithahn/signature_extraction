@@ -5,9 +5,9 @@ from skimage import measure, morphology
 from skimage.color import label2rgb
 from skimage.measure import regionprops
 
-originalImg = cv.imread('input/in7.png')
+originalImg = cv.imread('input/in20.jpg')
 originalGray = cv.cvtColor(originalImg, cv.COLOR_BGR2GRAY)
-img = cv.threshold(originalGray, 127, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)[1]  # ensure binary
+img = cv.threshold(originalGray, 127, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)[1]
 
 scale_percent = 50
 
